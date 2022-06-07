@@ -45,7 +45,7 @@ jobs:
         with:
           context: api_yamdb
           push: true
-          tags: kr0shkaen0t/yamdb_final:latest
+          tags: kr0shkaen0t/yamdb:latest
           file: ./api_yamdb/Dockerfile
 
   deploy:
@@ -60,7 +60,7 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          sudo docker pull kr0shkaen0t/yamdb_final:latest
+          sudo docker pull kr0shkaen0t/yamdb:latest
           sudo docker-compose stop
           sudo docker-compose rm web
           touch .env
