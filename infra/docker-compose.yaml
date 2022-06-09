@@ -9,7 +9,7 @@ services:
       - ./.env
 
   web:
-    image: kr0shkan0t/yamdb_final:latest
+    image: kr0shken0t/yamdb_final:latest
     restart: always
     volumes:
       - static_value:/app/static/
