@@ -73,5 +73,5 @@ docker-compose exec web python manage.py loaddata fixtures.json
 
 Останавливаем и удаляем контейнеры, сети, тома и образы: docker-compose down -v
 
-Автор: Беляев И
+Автор: Беляев И.
 https://github.com/kr0shkaen0t
